@@ -1,0 +1,14 @@
+.header {
+  width: 500px;
+}
+
+.tfoot td{
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffff;
+
+}
+
+.tfoot {
+  background-color: #333;
+}

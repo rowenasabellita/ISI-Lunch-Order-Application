@@ -1,0 +1,82 @@
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../images/backgroundimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.logoContainer header {
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+}
+
+.logoContent {
+  margin: 30px;
+}
+
+.mainContent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-top: 50px;
+  height: 430px;
+  width: 350px;
+}
+.regContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.regHeader {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.formContainer Form {
+  width: 100%;
+}
+
+.formContent {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.errorMessage {
+  color: red;
+  padding-top: 3px;
+}

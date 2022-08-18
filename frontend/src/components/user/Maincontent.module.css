@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+  overflow-y: auto;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+p {
+  font-size: 16px;
+}
+
+li {
+  display: list-item;
+  margin: 10px;
+}
+
+.btn {
+  border-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav a::after {
+  color: white;
+}
+
+.nav a {
+  color: #333;
+}
+
+.mainContent {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.topBarContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  background-color: #333;
+}
+
+.topBarContainer .logo {
+  width: 45px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+#title {
+  color: #8ec63f;
+  margin-left: 10px;
+}
+.topBarContainer .leftBar {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  flex: 80%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.topBarContainer .leftBar h5 {
+  padding-top: 10px;
+}
+
+.topBarContainer .rightBar {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.topBarContainer .rightBar label {
+  font-size: 16px;
+  margin-left: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topBarContainer .rightBar i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.headerContent {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../images/backgroundimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.headerData span {
+  color: rgba(250, 250, 250, 0.75);
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.Content {
+  background-color: #ffff;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px;
+  display: block;
+}
+
+.Content .topContent span {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 0px 70px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.Content .wrapperContent {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.Content .wrapperContent .dish_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  overflow-x: auto;
+  padding: 8px;
+}
+
+.Content .wrapperContent .dish_list .dish_tile {
+  display: block;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Content .wrapperContent .dish_list a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dish_container {
+  position: relative;
+  width: 50%;
+}
+
+.dish_picture {
+  background-color: rgba(51, 51, 51, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 320px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+.dish_picture .img_index {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 320px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  z-index: -1;
+}
+
+.dish_btn {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dish_container:hover .dish_picture {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: ease-out 1s;
+  transform: scale(1.1);
+}
+
+.dish_container:hover .dish_btn {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.dish_text {
+  background-color: #8ec63f;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.dish_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 80px;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.dish_name {
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  line-height: -1em;
+  color: #ffff;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.dish_avail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  line-height: -1em;
+  color: #ffff;
+  margin: 8px 16px;
+}
+
+/* Modal */
+
+.modalDialog {
+  width: 27% !important;
+  max-width: none !important;
+  height: auto;
+}
+
+.modalHeader {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.leftheader {
+  display: flex;
+  flex: 50%;
+}
+
+.rightheader {
+  display: flex;
+  flex: 30%;
+  margin-right: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sideHeader {
+  display: flex;
+  width: 100%;
+}
+
+.sideHeader .leftSide {
+  display: flex;
+  flex: 30%;
+}
+.sideHeader .rightSide {
+  display: flex;
+  flex: 1%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.radioContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: larger;
+  flex: 100%;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  width: 535px;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.radio span {
+  padding: 10px;
+}
+
+.radio:hover {
+  display: flex;
+  background-color: #eeee;
+  width: 100%;
+}
+
+.menuDate {
+  display: none;
+}

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  color: #8ec63f;
+}
+
+.nav a::after {
+  color: white;
+}
+
+.nav a {
+  color: #333;
+}
+
+.mainContainer {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: #eeee;
+  padding: 0;
+  margin: 0;
+}
+
+.leftContent {
+  position: sticky;
+  top: 10px;
+  display: flex;
+  box-shadow: 0 0 16px 10px rgba(0, 0, 0, 0.25);
+  border-style: none;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #2f4050;
+  flex: 15%;
+}
+.rightContent {
+  display: flex;
+  flex: 100%;
+  flex-wrap: nowrap;
+}
+
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  background-color: #333;
+}
+
+.headerContainer .logo {
+  width: 45px;
+  height: 40px;
+}
+.headerContainer .leftHeader {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  flex: 80%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.headerContainer .leftHeader h5 {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+.headerContainer .rightHeader {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  background-color: #333;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.headerContainer .rightHeader label {
+  font-size: 16px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}

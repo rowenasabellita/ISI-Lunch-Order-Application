@@ -1,0 +1,98 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.firstTable tbody + thead{
+  display: none;
+}
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  background-color: #dae1e8;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 100%;
+}
+.topContent {
+  display: flex;
+  background-color: #2f4050;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+}
+
+.leftContainer {
+  margin-left: 30px;
+  display: flex;
+  flex: 90%;
+}
+
+.leftContainer select {
+  font-size: 30px;
+  background-color: #2f4050;
+  color: #ffff;
+}
+
+.leftContainer select option {
+  font-size: 20px;
+background-color: #ffff;
+  color: black;
+}
+
+.leftContainer h1{
+  color: white;
+  margin-bottom: 0px;
+}
+
+.rightContainer {
+  margin: 10px 40px;
+  display: flex;
+  flex: 20%;
+  justify-content: flex-end;
+}
+
+.firstContent {
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.25);
+  background-color: #ffff;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  width: 96%;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.secondContent {
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.25);
+  background-color: #ffff;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  width: 96%;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+Table .footer tr {
+  background-color: #eeee;
+  color: black;
+  font-weight: bold;
+}
+
+.firstTable {
+  width: 100%;
+}
+
+.syncButton{
+  border: 0px 10px;
+  margin: 0px 10px ;
+}

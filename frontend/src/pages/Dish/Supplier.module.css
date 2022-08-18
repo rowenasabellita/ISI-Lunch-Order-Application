@@ -1,0 +1,27 @@
+.addBool {
+  width: 450px;
+}
+
+.addSupp {
+  width: 200px;
+}
+
+.mainFree {
+  display: flex;
+  width: 250px;
+  align-items: center;
+}
+.mainFree input {
+  width: 50px;
+  margin-left: 150px;
+}
+
+.sideFree {
+  display: flex;
+  width: 250px;
+  align-items: center;
+}
+.sideFree input {
+  width: 50px;
+  margin-left: 150px;
+}

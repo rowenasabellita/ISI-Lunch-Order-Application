@@ -1,0 +1,22 @@
+.addBool {
+    width: 450px;
+  }
+  
+  .mainFree {
+    display: flex;
+    margin-left: 120px;
+    align-items: center;
+  }
+  .mainFree input {
+    width: 50px;
+  }
+  
+  .sideFree {
+    display: flex;
+    margin-left: 120px;
+    align-items: center;
+  }
+  .sideFree input {
+    width: 50px;
+  }
+  

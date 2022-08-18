@@ -1,0 +1,22 @@
+.input {
+  width: 200px;
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  border-bottom: 1px solid;
+}
+
+.container {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.hidden {
+  display: none;
+}
